@@ -1,0 +1,31 @@
+
+.advantages-list {
+  display: flex;
+  padding: 0;
+}
+.advantages-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages-list__item {
+  width: 270px;
+}
+.advantages-list__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: #f5f4fa;
+}
+
+.advantages-list__title {
+  margin-bottom: 10px;
+}
+
+.advantages-list__title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}

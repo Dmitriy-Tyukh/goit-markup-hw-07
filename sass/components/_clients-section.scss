@@ -1,0 +1,36 @@
+
+.clients-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.67;
+}
+
+.company-list {
+  display: flex;
+  padding: 0;
+}
+
+.company-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.company-list__link {
+  width: 170px;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+
+  transition: fill 250ms $timing-function, border 250ms $timing-function;
+}
+.company-list__link:focus,
+.company-list__link:hover {
+  fill: $аccent-color;
+  border: 1px solid $аccent-color;
+}

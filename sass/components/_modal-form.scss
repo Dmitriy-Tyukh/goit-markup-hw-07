@@ -1,0 +1,163 @@
+
+.form {
+  padding: 40px;
+}
+
+.form__text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+
+  margin-bottom: 12px;
+
+  color: $title-text-color;
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form__field:focus-within > .form__input {
+  border: 1px solid $аccent-color;
+}
+.form__field:focus-within > .form__icon {
+  fill: $аccent-color;
+}
+
+.form__input {
+  width: 100%;
+  padding: 11px 12px 11px 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  caret-color: currentcolor;
+  cursor: pointer;
+  outline: none;
+  transition: border 250ms $timing-function;
+}
+
+.form__icon {
+  position: absolute;
+  pointer-events: none;
+
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+
+  fill: #212121;
+  transition: fill 250ms $timing-function;
+}
+
+.form__leble {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form__field--moves {
+  margin-bottom: 20px;
+}
+
+.form__input--scales {
+  display: block;
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+}
+
+.form__input--scales::placeholder {
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+}
+
+.policy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.policy__lable {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.policy::before {
+  content: '';
+  display: block;
+
+  margin-right: 8px;
+  
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+.policy__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+}
+
+.policy__input:focus:checked + .policy__icon {
+    opacity: 1;
+  }
+
+.policy__icon {
+  position: absolute;
+  top: 50%;
+  left: -24px;
+  transform: translateY(-50%);
+
+  opacity: 0;
+  transition: opacity 250ms $timing-function;
+}
+
+.policy__link {
+  text-decoration: underline;
+  color: $аccent-color;
+}
+
+.modal__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 200px;
+  height: 50px;
+
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  background-color: $аccent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__button:hover,
+.modal__button:focus {
+  background-color: #188ce8;
+}

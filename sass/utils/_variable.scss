@@ -1,0 +1,23 @@
+/*  цвет */
+
+/* цвет основного текста: rgba(117, 117, 117, 1) */
+/* цвет акцента кнопка портфолио Logo и ссылки (синий): rgba(33, 150, 243, 1) */
+/* белый цвет: #FFFFFF; */
+/* чорний цвет h-h3: rgba(33, 33, 33, 1) */
+/* цвет background hero, footer: rgba(47, 48, 58, 1) */
+
+/* variable */
+
+/* colors */
+
+  $title-text-color: rgba(33, 33, 33, 1);
+  $primary-text-color: rgba(117, 117, 117, 1);
+  $аccent-color: rgba(33, 150, 243, 1);
+  $background-color: #ffffff;
+  $footer-backgraund-color: rgba(47, 48, 58, 1);
+  $footer-input-color: rgba(255, 255, 255, 0.6);
+
+
+  /* cubic bezier*/
+  
+  $timing-function: cubic-bezier(0.4, 0, 0.2, 1);
