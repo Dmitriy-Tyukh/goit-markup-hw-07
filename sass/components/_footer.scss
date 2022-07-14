@@ -4,74 +4,74 @@
   background: $footer-backgraund-color;
 }
 
-.footer-link {
+.footer-link-group {
   display: flex;
   align-items: baseline;
-}
-
-.logo--moves {
-  display: block;
-  margin-bottom: 20px;
-}
-
-.logo__text--inverse {
-    color: #ffffff;
 }
 
 .first-column {
   margin-right: 70px;
   flex-direction: column;
   min-width: 231px;
+
+    .logo--moves {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .logo__text--inverse {
+        color: #ffffff;
+    }
+
+    &__link {
+        display: block;
+        color: rgba(255, 255, 255, 0.6);
+        transition: color 250ms $timing-function;
+    
+        &:hover,
+        &:focus {
+            color: $аccent-color;
+        }
+    }
+    &__link--repaints {
+        color: #ffffff;
+            &:hover,
+            &:focus {
+                color: #ffffff;
+            }
+    }
+    
+    &__item:not(:last-child) {
+    margin-bottom: 9px;
+    }
 }
+
 
 .second-column {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-
   margin-right: 93px;
 
-  text-transform: uppercase;
-  color: #ffffff;
-}
+    .column-title {
+        display: block;
 
-.socials-list__item--repaints {
-  background-color: #43444d;
-  border-radius: 50%;
-}
+        font-weight: $f-weight-bolt;
+        font-size: 14px;
+        line-height: 1.14;
 
-.second-column__title {
-  display: block;
-  margin-bottom: 20px;
-}
+        text-transform: uppercase;
+        color: #ffffff;
 
-.socials-list__icon--repaints {
-  fill: #ffffff;
-}
-
-.socials-list__link:focus,
-.socials-list__link:hover {
-  background-color: #2196f3;
-}
-
-.contact__link {
-  display: block;
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms $timing-function;
-}
-.contact__link:hover,
-.contact__link:focus {
-  color: $аccent-color;
-}
-.contact__link--repaints {
-    color: #ffffff;
-  }
-
-.contact__link--repaints:hover,
-.contact__link--repaints:focus {
-    color: #ffffff;
-}
-
-.contact__item:not(:last-child) {
-  margin-bottom: 9px;
+        margin-bottom: 20px;
+    }
+    .socials-list {
+        &__item--repaints {
+            background-color: #43444d;
+        }
+        &__link {
+            @include social-link-value(#ffffff);
+                
+                &:focus,
+                &:hover {
+                    @extend %socials-icon-active;
+                }
+        }
+    }
 }

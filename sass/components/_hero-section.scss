@@ -1,5 +1,6 @@
-
 .hero-section {
+    @extend %section;
+    
   padding: 200px 0;
   text-align: center;
   background-color: #2f303a;
@@ -13,42 +14,20 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
 
-.hero-title {
-  margin: 0 auto 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  width: 696px;
-  color: #ffffff;
-}
 
-.hero-button {
-  font-family: inherit;
-  cursor: pointer;
+    &__title {
+        margin: 0 auto 30px;
+        font-weight: $f-weight-black;
+        font-size: 44px;
+        line-height: 1.36;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        width: 696px;
+        color: #ffffff;
+    }
 
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  min-width: 200px;
-
-  border-radius: 4px;
-  border: none;
-  padding: 10px 32px;
-
-  text-transform: none;
-  letter-spacing: 0.06em;
-  background: $аccent-color;
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  transition: background-color 250ms $timing-function;
-}
-
-.hero-button:hover,
-.hero-button:focus {
-  background-color: #188ce8;
+    &__button {
+        @extend %button ;
+    }
 }

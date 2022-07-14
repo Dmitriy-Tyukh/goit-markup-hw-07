@@ -2,83 +2,55 @@
 .form-footer {
   display: flex;
   align-items: flex-end;
-}
 
-.form-footer__lable {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+    &__title {
+        font-weight: $f-weight-bolt;
+        font-size: 14px;
+        line-height: 1.14;
 
-  margin-right: 12px;
+        margin-right: 12px;
 
-  text-transform: uppercase;
-  color: #ffffff;
-}
+        text-transform: uppercase;
+        color: #ffffff;
+    }
 
-.form-footer__input {
-  width: 358px;
-  padding: 15px;
+    &__input {
+        width: 358px;
+        padding: 15px;
 
-  margin-top: 20px;
-  font-size: 16px;
-  line-height: 1.25;
+        margin-top: 20px;
+        font-size: 16px;
+        line-height: 1.25;
 
-  display: flex;
-  align-items: center;
+        display: flex;
+        align-items: center;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  cursor: pointer;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        cursor: pointer;
 
-  color: #ffffff;
-  background-color: #2f303a;
-}
+        color: #ffffff;
+        background-color: #2f303a;
+            
+            &::placeholder {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.25;
 
-.form-footer__input::placeholder {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
+                display: flex;
+                align-items: center;
 
-  display: flex;
-  align-items: center;
+                color: $footer-input-color;
+            }
+    }
+   
+    &__button {
+       @extend %button;
+    }
 
-  color: $footer-input-color;
-}
-
-.form-footer__button {
-  display: inline-block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 200px;
-  height: 50px;
-
-  margin: 0;
-  padding: 0;
-
-  font-family: inherit;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
-
-  color: #ffffff;
-  background-color: $аccent-color;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-}
-
-.form-footer__button:hover,
-.form-footer__button:focus {
-  background-color: #188ce8;
-}
-
-.form-footer__icon {
-  margin-left: 10px;
-  fill: #ffffff;
+    &__icon {
+    margin-left: 10px;
+    fill: #ffffff;
+    }
 }

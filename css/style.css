@@ -349,6 +349,9 @@ h3 {
   background-color: #f5f4fa;
 }
 .section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
   margin-bottom: 50px;
 }
 .team-list__title {
@@ -431,10 +434,10 @@ h3 {
 /* --------clients section---------- */
 
 .clients-title {
+  font-size: 36px;
+  line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.67;
 }
 
 .company-list {
@@ -473,7 +476,7 @@ h3 {
   background: var(--footer-backgraund-color);
 }
 
-.footer-link {
+.footer-link-group {
   display: flex;
   align-items: baseline;
 }
@@ -509,7 +512,7 @@ h3 {
   border-radius: 50%;
 }
 
-.second-column__title {
+.column-title {
   display: block;
   margin-bottom: 20px;
 }
@@ -523,25 +526,25 @@ h3 {
   background-color: #2196f3;
 }
 
-.contact__link {
+.first-column__link {
   display: block;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms var(--timing-function);
 }
-.contact__link:hover,
-.contact__link:focus {
+.first-column__link:hover,
+.first-column__link:focus {
   color: var(--аccent-color);
 }
-.contact__link--repaints {
+.first-column__link--repaints {
     color: #ffffff;
   }
 
-.contact__link--repaints:hover,
-.contact__link--repaints:focus {
+.first-column__link--repaints:hover,
+.first-column__link--repaints:focus {
     color: #ffffff;
 }
 
-.contact__item:not(:last-child) {
+.first-column__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -550,7 +553,7 @@ h3 {
   align-items: flex-end;
 }
 
-.form-footer__lable {
+.form-footer__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

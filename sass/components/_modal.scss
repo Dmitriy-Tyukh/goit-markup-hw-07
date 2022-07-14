@@ -1,8 +1,4 @@
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.2);
-  opacity: 0;
-}
 
 .modal {
   position: absolute;
@@ -21,36 +17,40 @@
   transition: transform 250ms $timing-function, opacity 250ms $timing-function;
 
   background-color: #ffffff;
-}
 
-.modal__button--closes {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+    .backdrop.is-hidden & {
+        transform: translate(-50%, -50%) scale(0.2);
+        opacity: 0;
+    }
+    &__button--closes {
+        position: absolute;
+        top: 8px;
+        right: 8px;
 
-  width: 30px;
-  height: 30px;
+        width: 30px;
+        height: 30px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-  margin: 0;
-  padding: 0;
-  border-radius: 50%;
+        margin: 0;
+        padding: 0;
+        border-radius: 50%;
 
-  background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-}
-
-.modal__icon {
-  fill: #212121;
-  background-color: #ffffff;
-  transition: fill 250ms $timing-function;
-}
-
-.modal__button--closes:hover .modal__icon,
-.modal__button--closes:focus .modal__icon {
-  fill: $аccent-color;
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+    }
+    
+    &__icon {
+        fill: #212121;
+        background-color: #ffffff;
+        transition: fill 250ms $timing-function;
+            
+            .modal__button--closes:hover &,
+            .modal__button--closes:focus & {
+                fill: $аccent-color;
+            }
+    }
 }

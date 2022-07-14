@@ -1,0 +1,10 @@
+@mixin flex-settings($display, $justify-content, $align-items) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+
+@mixin social-link-value ($fill) {
+    fill: $fill;
+    transition: background-color 250ms $timing-function, fill 250ms $timing-function;
+} 
