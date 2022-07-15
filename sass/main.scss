@@ -1,22 +1,17 @@
 @import "utils/variable";
-@import "base/normalize";
-@import "base/reset";
 @import "utils/placeholders";
 @import "utils/mixins";
 @import "utils/visually-hidden";
-@import "base/body";
-@import "base/section";
-@import "base/container";
-@import "components/page-header";
+
+@import "base/normalize";
+@import "base/reset";
+@import "base/common";
+
+@import "components/section";
+@import "components/container";
 @import "components/logo";
 @import "components/novigation";
-@import "components/hero-section";
-@import "components/advantages-section";
-@import "components/work-section";
-@import "components/team-section";
 @import "components/socials-icon";
-@import "components/clients-section";
-@import "components/footer";
 @import "components/footer-form";
 @import "components/backdrop";
 @import "components/modal";
@@ -25,8 +20,13 @@
 @import "components/port-card-set";
 @import "components/port-card";
 
-
-
+@import "layout/page-header";
+@import "layout/hero-section";
+@import "layout/advantages-section";
+@import "layout/work-section";
+@import "layout/team-section";
+@import "layout/clients-section";
+@import "layout/footer";
 
 
 
