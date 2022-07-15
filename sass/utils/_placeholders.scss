@@ -1,7 +1,11 @@
+//.section
+
 %section {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
+//primary button (modal-btn, hero-btn, footer-btn)
 
 %button {
   display: flex;
@@ -34,10 +38,14 @@
     }
 }
 
+// social-icon (active) 
+
 %socials-icon-active {
         fill: #ffffff;
         background-color: $social-icons-accent-color;
 }
+
+// social-link (value)
 
 %social-link-value {
     width: 44px;
@@ -47,6 +55,8 @@
     border-radius: 50%;
     cursor: pointer;
 }
+
+// h2 - section title
 
 %section-title {
     font-size: 36px;

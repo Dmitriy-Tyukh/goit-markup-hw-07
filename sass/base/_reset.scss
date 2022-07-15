@@ -1,50 +1,24 @@
 
-/*----- reset ------*/
+//----- RESET ------//
+
+// base style
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 *,
 *::after,
 *::before {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
-/* Стили для обнуления верхних отступов у элементов */
+
+// Стили для обнуления верхних отступов у элементов
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
-	margin-top: 0;
-}
-/* Класс для обнуления базовых свойств у списков (ul) */
-.list {
-	list-style: none;
-	padding-left: 0;
-	margin: 0;
-}
-/* Класс для обнуления базовых свойств у ссылок */
-.link {
-	text-decoration: none;
-	color: inherit;
-}
-/* Свойства для корректного отображения картинок */
-img {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-/* Свойства для обнуления курсива у address */
-address {
-	font-style: normal;
-}
-
-
-h1,
-h2,
-h3,
 p,
 ul,
 a {
@@ -52,11 +26,37 @@ a {
   margin-bottom: 0;
 }
 
+// Класс для обнуления базовых свойств у списков (ul)
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+// Класс для обнуления базовых свойств у ссылок
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+// Свойства для корректного отображения картинок
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+// Свойства для обнуления курсива у address
+address {
+  font-style: normal;
+}
+
+ // Обнуление падига для - list
 ul {
   padding: 0;
 }
 
-/* link decoration */
+// link decoration
 a {
   text-decoration: none;
   font-style: normal;
@@ -64,10 +64,13 @@ a {
 li {
   list-style: none;
 }
-/* title color*/
+
+// title color
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   color: $title-text-color;
 }
-
